@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ScooterList from "./components/ScooterList.js";
-import BookingForm from "./components/BookingForm";
-import UserProfile from "./components/UserProfile";
+import ScooterList from "./components/ScooterList.jsx";
+import BookingForm from "./components/BookingForm.jsx";
+import UserProfile from "./components/UserProfile.jsx";
 import "./App.css";
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route src={<ScooterList />} />
-          <Route src={<BookingForm />} />
-          <Route src={<UserProfile />} />
+          <Route path="/" element={<ScooterList />} />
+          <Route path="/book/:id" element={<BookingForm />} />
+          <Route path="/user-profile" element={<UserProfile />} />
         </Routes>
       </Router>
     </>
