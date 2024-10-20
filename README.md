@@ -1,5 +1,5 @@
 # React + Vite
-<p>My another one pat - project </p>
+<p>My another one pat - project scooter-rental </p>
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
