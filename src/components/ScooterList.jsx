@@ -12,11 +12,23 @@ function ScooterList() {
   return (
     <div>
       <h2>Available Scooters</h2>
-      <ul>
+      <ul style={{ listStyleType: "none", padding: 0 }}>
         {scooters.map((scooter) => (
-          <li key={scooter.id}>
-            {scooter.model} - ${scooter.price}
-            <Link to={`/booking/${scooter.id}`}> Rent Now</Link>
+          <li key={scooter.id} style={{ marginBottom: "10px" }}>
+            <span>
+              {scooter.model} - ${scooter.price}
+            </span>{" "}
+            <Link to={`/booking/${scooter.id}`}>
+              <button
+                style={{
+                  marginLeft: "10px",
+                  color: "red",
+                  boxShadow: "0 0 0 5px lightgreen",
+                }}
+              >
+                Rent Now
+              </button>
+            </Link>
           </li>
         ))}
       </ul>

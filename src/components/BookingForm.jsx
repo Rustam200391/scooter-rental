@@ -1,11 +1,11 @@
 // src/components/BookingForm.js
 import React, { useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 function BookingForm() {
   const { id } = useParams(); // получаем id самоката из URL
   const [user, setUser] = useState({ name: "", date: "" });
-  const history = useHistory();
+  const history = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
