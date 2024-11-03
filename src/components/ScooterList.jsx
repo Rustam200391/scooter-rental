@@ -11,7 +11,7 @@ const scooters = [
 function ScooterList() {
   return (
     <div>
-      <h2 style={{ color: "#ffe500", margin: "70px 0px 0px 0px" }}>
+      <h2 style={{ color: "#ffe582", margin: "70px 0px 0px 0px" }}>
         Available Scooters
       </h2>
       <ul style={{ listStyleType: "none", padding: 0, color: "red" }}>
